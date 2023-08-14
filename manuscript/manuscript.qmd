@@ -1,0 +1,31 @@
+---
+title: "The Economics of Wildfire Aviation"
+format: 
+  docx:
+    reference-doc: custom-reference-doc.docx
+    toc: true
+    number-sections: true
+bibliography: references.bib
+csl: journal-of-agricultural-and-resource-economics.csl
+---
+
+## Introduction
+
+<!-- high level connecting wildfire to climate change; mitigation is not enough -->
+
+Changing climate is driving longer and more intense fire seasons. There is an urgent need to reduce wildfire risk in fire-prone regions of the US. Yet, the primary method for reducing risk involves the costly removal of combustible fuels. Despite significant progress, the number of acres in need of treatment is very large and not expected to be treated over the next decade. Wildfire suppression and response currently does and will continue to play an important role in protecting people, property, and other valued assets from wildfire.
+
+<!-- aviation is an important response asset but expensive -->
+
+Wildfire response is a coordinated effort between federal, state, and local land management agencies. Aviation resources have been used in wildfire response since WWII, and represent an important yet expensive firefighting resource. Helicpoters and fixed-wing aircraft are used to drop water and retardant on or in advance of the fire. Aircraft are also used to gather information about the extent and intensity of the fire, and to survey damage. While aviation can provide valuable services, they are one of the most expensive resources on an active fire.
+
+<!-- aviation expense -->
+
+Over the past 10 years, the federal government spent an average of \$xx per year on wildfire suppression. Approximately 30% (\$493 million) of that is spent on aviation resources [@stonesifer2021]. These costs involve hourly flight costs to operate the aircraft, the cost of retardant, and the cost to keep aircraft available. Until 2008?, federal agencies owned and operated a fleet of aircraft bearing the cost of maintenance. Since 2008, the aircraft are owned by private entities and contracted for use by federal agencies. Contracts are either exclusive use or call-when-needed where the name dictates the structure of the contract and the associated costs. Exclusive use contracts mandate that an aircraft is exclusively available to the contracting entity (e.g., US Forest Service) for a specified number of days. Call-when-needed contracts specify that an aircraft is available for a short period of time (e.g., 3 days) at a daily availability rate. The optimal structure, cost, and duration of contracts is an economics problem.
+
+<!-- safety -->
+
+{{< pagebreak >}} \## References
+
+::: {#refs}
+:::
