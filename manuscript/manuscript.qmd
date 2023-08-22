@@ -17,7 +17,11 @@ Changing climate is driving longer and more intense fire seasons. There is an ur
 
 <!-- aviation is an important response asset but expensive -->
 
-Wildfire response is a coordinated effort between federal, state, and local land management agencies. Aviation resources have been used in wildfire response since WWII, and represent an important yet expensive firefighting resource. Helicpoters and fixed-wing aircraft are used to drop water and retardant on or in advance of the fire. Aircraft are also used to gather information about the extent and intensity of the fire, and to survey damage. While aviation can provide valuable services, they are one of the most expensive resources on an active fire.
+Wildfire response is a coordinated effort between federal, state, and local land management agencies. Aviation resources have been used in wildfire response since WWII [@pyne1982], and represent an important yet expensive firefighting resource. Helicopters and fixed-wing aircraft are used to drop water and retardant on or in advance of the fire. Aircraft are also used to gather information about the extent and intensity of the fire, and to survey damage. While aviation can provide valuable services, they are one of the most expensive resources on an active fire.
+
+<!-- objectives  -->
+
+The objective of this paper is to describe/investigate the economic aspects of aviation used for wildfire response. First, we will discuss the lack of objective measurement of the benefits of aviation that is necessary to subject their use to benefit cost analysis. Second, we will apply economic principles/theory to the procurement of aviation resources. While this paper will not analyze data or come to clear conclusions about the use of aviation, it will frame the economic problems and provide a path forward for how to solve them.
 
 <!-- aviation expense -->
 
