@@ -19,15 +19,25 @@ Changing climate is driving longer and more intense fire seasons. There is an ur
 
 Wildfire response is a coordinated effort between federal, state, and local land management agencies. Aviation resources have been used in wildfire response since WWII [@pyne1982], and represent an important yet expensive firefighting resource. Helicopters and fixed-wing aircraft are used to drop water and retardant on or in advance of the fire. Aircraft are also used to gather information about the extent and intensity of the fire, and to survey damage. While aviation can provide valuable services, they are one of the most expensive resources on an active fire.
 
+<!-- aviation expense -->
+
+Over the past 10 years, the federal government spent an average of \$2.3 billion per year on wildfire suppression [@suppress]. Approximately 21% (\$493 million) of that is spent on aviation resources [@stonesifer2021]. These costs involve hourly flight costs to operate the aircraft, the cost of retardant, and the cost to keep aircraft available. Given the high cost of aviation, it is critical to determine whether the benefits exceed the costs. Otherwise, resources could be better invested in other firefighting resources such as wildland firefighting engines, dozers, and personnel.
+
+Until 2008?, federal agencies owned and operated a fleet of aircraft bearing the cost of maintenance. Since 2008 (check this), the aircraft are owned by private entities and contracted for use by federal agencies. Contracts are either exclusive use or call-when-needed where the name dictates the structure of the contract and the associated costs. Exclusive use contracts mandate that an aircraft is exclusively available to the contracting entity (e.g., US Forest Service) for a specified number of days. Call-when-needed contracts specify that an aircraft is available for a short period of time (e.g., 3 days) at a daily availability rate. The optimal structure, cost, and duration of contracts is an economics problem.
+
 <!-- objectives  -->
 
 The objective of this paper is to describe/investigate the economic aspects of aviation used for wildfire response. First, we will discuss the lack of objective measurement of the benefits of aviation that is necessary to subject their use to benefit cost analysis. Second, we will apply economic principles/theory to the procurement of aviation resources. While this paper will not analyze data or come to clear conclusions about the use of aviation, it will frame the economic problems and provide a path forward for how to solve them.
 
-<!-- aviation expense -->
+-   Cost Benefit analysis
 
-Over the past 10 years, the federal government spent an average of \$xx per year on wildfire suppression. Approximately 30% (\$493 million) of that is spent on aviation resources [@stonesifer2021]. These costs involve hourly flight costs to operate the aircraft, the cost of retardant, and the cost to keep aircraft available. Until 2008?, federal agencies owned and operated a fleet of aircraft bearing the cost of maintenance. Since 2008, the aircraft are owned by private entities and contracted for use by federal agencies. Contracts are either exclusive use or call-when-needed where the name dictates the structure of the contract and the associated costs. Exclusive use contracts mandate that an aircraft is exclusively available to the contracting entity (e.g., US Forest Service) for a specified number of days. Call-when-needed contracts specify that an aircraft is available for a short period of time (e.g., 3 days) at a daily availability rate. The optimal structure, cost, and duration of contracts is an economics problem.
+    -   We know the cost of aviation because the gov pays the bills. The benefits are hard to quantify because we don't observe the fires that are contained
 
-<!-- safety -->
+    -   In econometric terms, aviation is endogenous and not randomly assigned to fires. So, aviation is used on fires where it is expected to help. Moreover, it is used in areas where it is expected to reduce damage or slow the spread.
+
+    -   Aviation has long been expected to work best on initial attack. However, aviation is increasingly used to support extend attack
+
+-   Procurement
 
 {{< pagebreak >}} \## References
 
