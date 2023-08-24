@@ -29,15 +29,21 @@ Until 2008?, federal agencies owned and operated a fleet of aircraft bearing the
 
 The objective of this paper is to describe/investigate the economic aspects of aviation used for wildfire response. First, we will discuss the lack of objective measurement of the benefits of aviation that is necessary to subject their use to benefit cost analysis. Second, we will apply economic principles/theory to the procurement of aviation resources. While this paper will not analyze data or come to clear conclusions about the use of aviation, it will frame the economic problems and provide a path forward for how to solve them.
 
--   Cost Benefit analysis
+# Measuring the benefits of aviation
 
-    -   We know the cost of aviation because the gov pays the bills. The benefits are hard to quantify because we don't observe the fires that are contained
+Cost benefit analysis requires the accounting of the costs and benefits of an intervention over a relevant time period (cite). The cost of using aviation to fight fire is known because the government must pay the bill. The benefits are harder to quantify because they involve the avoided costs and losses of fires that were prevented from growing. If aviation resources reduce the probability that a fire spreads and damages property, we don't observe the counterfactual - what would have happened in the absence of aviation use. A more nuanced challenge is that aviation is not allocated randomly, but rather assigned to fires that decision maker's believe resources will have the best chance to affect fire outcomes. This section describes how aviation resources are currently used to fight fire, discusses the conceptual challenges to measuring benefits, and proposes data driven approaches to measuring the benefits of aviation given currently available data.
 
-    -   In econometric terms, aviation is endogenous and not randomly assigned to fires. So, aviation is used on fires where it is expected to help. Moreover, it is used in areas where it is expected to reduce damage or slow the spread.
+Aviation resources such as large airtankers (LAT) are believed to be most effective during the initial attack phase (the first burning period which is usually from ignition to 10:00 AM the following day). The logic is simple, aggressively attack the fire while it is small. Most fires (more than 90%) are contained during initial attack. However, the fires that do escape initial containment because of weather or lack of sufficient IA effort can grow large and pose risk to values at risk. Aviation is increasingly used to support extend attack.
 
-    -   Aviation has long been expected to work best on initial attack. However, aviation is increasingly used to support extend attack
+Procurement
 
--   Procurement
+The USFS determined that owning and maintaining its own fleet of aircraft is not worth the cost. In xxxx, they changed to a procurement model in which private firefighting aircraft are contracted for a period of time at a specified cost.
+
+Describe "exclusive use" and "call when needed" contracts
+
+The interesting economics question is how many of each aircraft to sign under each type of contract?
+
+What are the key determinants of this optimal portfolio of contracts
 
 {{< pagebreak >}} \## References
 
