@@ -13,7 +13,7 @@ csl: journal-of-agricultural-and-resource-economics.csl
 
 <!-- high level connecting wildfire to climate change; mitigation is not enough -->
 
-Changing climate is driving longer and more intense fire seasons. There is an urgent need to reduce wildfire risk in fire-prone regions of the US. Yet, the primary method for reducing risk involves the costly removal of combustible fuels. Despite significant progress, the number of acres in need of treatment is very large and not expected to be treated over the next decade. Wildfire suppression and response currently does and will continue to play an important role in protecting people, property, and other valued assets from wildfire.
+Changing climate is driving longer and more intense fire seasons. There is an urgent need to reduce wildfire risk in fire-prone regions of the US. Yet, the primary method for reducing risk at the landscape level involves the costly removal of combustible fuels. Despite significant progress, the number of acres in need of treatment is very large and not expected to be treated over the next decade [@thompson2023]. Wildfire suppression and response currently does and will continue to play an important role in protecting people, property, and other valued assets from wildfire.
 
 <!-- aviation is an important response asset but expensive -->
 
@@ -23,7 +23,7 @@ Wildfire response is a coordinated effort between federal, state, and local land
 
 Over the past 10 years, the federal government spent an average of \$2.3 billion per year on wildfire suppression [@suppress]. Approximately 21% (\$493 million) of that is spent on aviation resources [@stonesifer2021]. These costs involve hourly flight costs to operate the aircraft, the cost of retardant, and the cost to keep aircraft available. Given the high cost of aviation, it is critical to determine whether the benefits exceed the costs. Otherwise, resources could be better invested in other firefighting resources such as wildland firefighting engines, dozers, and personnel.
 
-Until 2008?, federal agencies owned and operated a fleet of aircraft bearing the cost of maintenance. Since 2008 (check this), the aircraft are owned by private entities and contracted for use by federal agencies. Contracts are either exclusive use or call-when-needed where the name dictates the structure of the contract and the associated costs. Exclusive use contracts mandate that an aircraft is exclusively available to the contracting entity (e.g., US Forest Service) for a specified number of days. Call-when-needed contracts specify that an aircraft is available for a short period of time (e.g., 3 days) at a daily availability rate. The optimal structure, cost, and duration of contracts is an economics problem.
+Until 2008?, federal agencies owned and operated a fleet of aircraft bearing the cost of maintenance. Since 2008 (check this), the aircraft used by federal agencies are owned by private entities. Contracts are either exclusive use or call-when-needed where the name references the structure of the contract and the associated costs. Exclusive use contracts mandate that an aircraft is exclusively available to the contracting entity (e.g., US Forest Service) for a specified number of days. Call-when-needed contracts specify that an aircraft is available for a short period of time (e.g., 3 days) at a daily availability rate. The optimal structure, cost, and duration of contracts is an economics problem.
 
 <!-- objectives  -->
 
@@ -31,11 +31,30 @@ The objective of this paper is to describe/investigate the economic aspects of a
 
 # Measuring the benefits of aviation
 
-Cost benefit analysis requires the accounting of the costs and benefits of an intervention over a relevant time period (cite). The cost of using aviation to fight fire is known because the government must pay the bill. The benefits are harder to quantify because they involve the avoided costs and losses of fires that were prevented from growing. If aviation resources reduce the probability that a fire spreads and damages property, we don't observe the counterfactual - what would have happened in the absence of aviation use. A more nuanced challenge is that aviation is not allocated randomly, but rather assigned to fires that decision maker's believe resources will have the best chance to affect fire outcomes. This section describes how aviation resources are currently used to fight fire, discusses the conceptual challenges to measuring benefits, and proposes data driven approaches to measuring the benefits of aviation given currently available data.
+Cost benefit analysis requires the accounting of the costs and benefits of an intervention over a relevant time period [@boardman2018]. The direct cost of using aviation to fight fire is recorded because the government is responsible for paying the bill. Firefighting aviation also carries risks, which are not monetized. [@butler2015] document that 78 of the 298 (26%) recorded wildland firefighting fatalities were attributable to aviation incidents. The benefits of aviation are harder to quantify because they involve the avoided costs and losses of fires that were prevented from growing. If aviation resources reduce the probability that a fire spreads and damages property, we don't observe the counterfactual - what would have happened in the absence of aviation use. A more nuanced challenge is that aviation is not allocated randomly, but rather assigned to fires that decision maker's believe resources will have the best chance to affect fire outcomes. This section describes how aviation resources are currently used to fight fire, discusses the conceptual challenges to measuring benefits, and proposes data driven approaches to measuring the benefits of aviation given currently available data.
 
-Aviation resources such as large airtankers (LAT) are believed to be most effective during the initial attack phase (the first burning period which is usually from ignition to 10:00 AM the following day). The logic is simple, aggressively attack the fire while it is small. Most fires (more than 90%) are contained during initial attack. However, the fires that do escape initial containment because of weather or lack of sufficient IA effort can grow large and pose risk to values at risk. Aviation is increasingly used to support extend attack.
+Aviation resources such as large airtankers (LAT) are believed to be most effective during the initial attack phase (the first burning period which is usually from ignition to 10:00 AM the following day). The logic is simple, aggressively attack the fire while it is small and it will not grow large. Most fires (more than 90%) are contained during initial attack. However, the fires that do escape initial containment because of weather or lack of sufficient IA effort can grow large and pose risk to values at risk.
 
-Procurement
+Aviation is increasingly used to support extend attack - the incident phase after the first burning period. Indeed, [@stonesifer2016] find that in 2010 aviation was used on IA 63% of the time (see Table 3). By 2012, aviation use on IA represented only 44% of drops. A US Forest Service Aerial Firefighting Use and Effectiveness (AFUE) Report documents that between 2015 and 2018, aviation resources were used on extended attack 60% to 70% of the time (cite AFUE). Aviation resources may be used during extended attack to contain or slow fire spread, reduce burning intensity, and to reinforce fire line built on the ground (cite AFUE).
+
+The fundamental question is when is using aviation to fight fire worth the cost. The answer depends on the objectives of the mission, which aircraft are conducting the mission, and tactically where on the fire aviation is used in relation to other suppression activities. The AFUE report provides the best available information on the effectiveness of aviation resources in accomplishing stated objectives. It finds that...
+
+Despite the advances in understanding aviation effectiveness, the AFUE report does not apply a study design capable of measuring the benefits of aviation. Describe the study design...
+
+Here we define a study design intended to objectively and quantitatively measure the benefits of aviation. Specifically, we outline a difference-in-differences method to assess the probability that an aviation drop stops or reduces the intensity of the fire. Since we know the time and location of the aviation drop, the fire, landscape characteristics, and weather, we can build a dataset that follows the structure of a two by two DiD design. We know the location of the drop and the direction that the fire is burning, so we can spatially define the pre and post of the treatment area. The challenge in any causal inference problem is to find an appropriate control to serve as the counterfactual. In this case, we can define a control as the area adjacent to the end of the aviation drop. The area near the end of the drop is likely to have similar vegetation and topography that influences wildfire behavior. (reference figure)
+
+Figure xx illustrates the empirical strategy on a retardant drop on the xx fire. The fire is progressing south and retardant is dropped in advance of the fire. The drop is xx meters long. The north side of the drop is the pre-treatment period while the south side is the post-treatment period. The control region is east of the retardant line with the north and south similarly defined as the pre and post period. In this example, the fire does not progress south of the drop into region B, but it does progress into region D (post-period control area), providing some evidence that the drop prevented the spread of the fire south. 
+
+We cannot draw conclusions from a single drop. We can repeat this procedure across many drops on many fires. Once the regions are defined for each drop, we can use GIS to extract information on vegetation, topography, and weather conditions at the time the fire encountered the drop. The following model can be used to estimate the average treatment effect on the treated,
+
+$$ y_{it} = \alpha + \beta_1 Treated_i + \beta_2 Post_t + \beta_3 (Treated_i \cdot Post_t) + \gamma X_{it} + \varepsilon_{it} , $$
+where $y_{it}$ is the outcome variable for unit $i$ at time $t$. The outcome could be a binary indicator for whether an area burned or a measure of intensity like Fire Radiance Power (cite NASA FIRMS). $Treated_i$ is a binary variable indicating whether unit $i$ is in the treatment group (region A and B in figure xx). $Post_t$ is a binary variable indicating whether the observation is from the post-treatment period (region B and D in figure xx). $X_{it}$ is a vector of vegetation measures, topography, and weather, and $\varepsilon_{it}$ is the error term. The coefficient of interest is $\beta_3$, which represents the treatment effect. It measures the difference in the change in fire outcomes between the treatment and control groups before and after the treatment. 
+
+The identification of the treatement effect is based on the assumption that the precise location of the start and end of the drop is as good as random.  The pilots intend to drop retardant in the region, but the exact location is subject to pilot accuracy, speed, altitude, and weather conditions. If the end points of the retardant drop are random, then the untreated region near the drop is just as likely to be treated.
+
+This framework is simple but powerful. 
+
+# Procurement
 
 The USFS determined that owning and maintaining its own fleet of aircraft is not worth the cost. In xxxx, they changed to a procurement model in which private firefighting aircraft are contracted for a period of time at a specified cost.
 
@@ -45,7 +64,9 @@ The interesting economics question is how many of each aircraft to sign under ea
 
 What are the key determinants of this optimal portfolio of contracts
 
-{{< pagebreak >}} \## References
+{{< pagebreak >}} 
+
+## References
 
 ::: {#refs}
 :::
