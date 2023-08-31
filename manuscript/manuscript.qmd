@@ -12,6 +12,7 @@ csl: journal-of-agricultural-and-resource-economics.csl
 ## Introduction
 
 <!-- high level connecting wildfire to climate change; mitigation is not enough -->
+<!-- consider new opening jumping straight into aviation or starting with overall cost -->
 
 Changing climate is driving longer and more intense fire seasons. There is an urgent need to reduce wildfire risk in fire-prone regions of the US. Yet, the primary method for reducing risk at the landscape level involves the costly removal of combustible fuels. Despite significant progress, the number of acres in need of treatment is very large and not expected to be treated over the next decade [@thompson2023]. Wildfire suppression and response currently does and will continue to play an important role in protecting people, property, and other valued assets from wildfire.
 
@@ -50,19 +51,21 @@ We cannot draw conclusions from a single drop. We can repeat this procedure acro
 $$ y_{it} = \alpha + \beta_1 Treated_i + \beta_2 Post_t + \beta_3 (Treated_i \cdot Post_t) + \gamma X_{it} + \varepsilon_{it} , $$
 where $y_{it}$ is the outcome variable for unit $i$ at time $t$. The outcome could be a binary indicator for whether an area burned or a measure of intensity like Fire Radiance Power (cite NASA FIRMS). $Treated_i$ is a binary variable indicating whether unit $i$ is in the treatment group (region A and B in figure xx). $Post_t$ is a binary variable indicating whether the observation is from the post-treatment period (region B and D in figure xx). $X_{it}$ is a vector of vegetation measures, topography, and weather, and $\varepsilon_{it}$ is the error term. The coefficient of interest is $\beta_3$, which represents the treatment effect. It measures the difference in the change in fire outcomes between the treatment and control groups before and after the treatment. 
 
-The identification of the treatement effect is based on the assumption that the precise location of the start and end of the drop is as good as random.  The pilots intend to drop retardant in the region, but the exact location is subject to pilot accuracy, speed, altitude, and weather conditions. If the end points of the retardant drop are random, then the untreated region near the drop is just as likely to be treated.
+The identification of the treatement effect is based on the assumption that the precise location of the start and end of the drop is as good as random.  The pilots intend to drop retardant in the area, but the exact location is subject to pilot accuracy, speed, altitude, and weather conditions. If the end points of the retardant drop are random, then the untreated region near the drop is just as likely to be treated.
 
-This framework is simple but powerful. 
+This framework is simple but powerful. First, it produces a causal estimate of the average effectiveness of large airtanker drops toward stopping the spread of fire. Second, we can easily investigate heterogeneity of the treatment effect by interacting topography, vegetation, and weather with $(Treated_i \cdot Post_t)$. These results can help inform strategic operations highlighting when and where large airtanker drops are most effective. The results also serve as a crucial step in estimating the benefits - avoided damage - of LAT drops. For example, at time $t$, assume there is some risk to assets denominated by $\rho(e_0)*V$ where $\rho(e_0)$ is a probability of loss as a function of effort, $e_0$, and $V$ is the dollar value of the assets. If a LAT drop represents effort $e_1 > e_0$, then the benefit of the drop is $V*\left[\rho(e_0) - \rho(e_1) \right]$.
 
 # Procurement
 
-The USFS determined that owning and maintaining its own fleet of aircraft is not worth the cost. In xxxx, they changed to a procurement model in which private firefighting aircraft are contracted for a period of time at a specified cost.
+The USFS determined that owning and maintaining its own fleet of aircraft is not worth the cost. In xxxx, they changed to a procurement model in which private firefighting aircraft are contracted for a period of time at a specified cost. The two forms of contract are Exclusive Use (EXU) and Call-When-Needed (CNW). Exclusive use contracts mandate that an aircraft is exclusively available to the contracting entity (e.g., US Forest Service) for a specified number of days at a daily cost. Call-when-needed contracts specify that an aircraft is available for a short period of time (e.g., 3 days) at a daily cost higher than the EXU availability rate. The question is: how many of each contract should the USFS sign at the start of each fire season? The answer depends on expected use patterns of the aviation resources.
 
-Describe "exclusive use" and "call when needed" contracts
+Expected use patterns are a function of fire activity throughout the season. If the demand for aircraft was equal on every day of the season, it would be optimal to sign all exclusive use contracts for the season. If demand was intermittent but known throughout the season, it would be optimal to sign CWN contracts (up to a certain daily cost rate), so that you only pay for aviation when you need it. The reality is somewhere in between these extremes. Wildfire activity is largely driven by predictable weather patterns starting in the spring in the southwestern US, progressing north and counterclockwise across the northwest through the summer, and ending in California in the Fall. However, the fire activity on any particular day throughout the season is very unpredictable. Therefore, the optimal portfolio of contract types depends on the variability and uncertainty in demand throughout the season.
 
-The interesting economics question is how many of each aircraft to sign under each type of contract?
+Figure 2 illustrates the variability and uncertainty of initial attack fires (bottom panel) and large fires being actively suppressed (extended attack - top panel) throughout the season. According to the 2022 USFS Schedule of Items, most large airtankers under exclusive use contracts started between March and May and were scheduled to end in September, October, or November.^[The only publicly accessible document we could locate was from June 24, 2022 https://www.fs.usda.gov/Internet/FSE_DOCUMENTS/fseprd1041508.pdf] While the 18 large and very large airtankers under contract in 2022 span the dates when fire activity is expected to be high, they are not activated in a pattern that follows the number of IA and EA fires in figure 2. The trends in figure 2 suggest that given current usage patterns, the USFS could delay activating some LATs and VLATs until later in June. Call When Needed contracts could be used to handle surge capacity and unexpected increases in fire activity.
 
-What are the key determinants of this optimal portfolio of contracts
+![Figure 2. Trends of Extended Attack (top) and Initial Attack (bottom) fires from 2007 to 2021. The points represent the median and the lines represent the interquartile range (25th to 75th percentile).](../figures/ia_ea_fires.png)
+
+
 
 {{< pagebreak >}} 
 
