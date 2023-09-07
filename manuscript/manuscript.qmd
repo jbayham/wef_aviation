@@ -1,5 +1,5 @@
 ---
-title: "The Economics of Wildfire Aviation"
+#title: "The Economics of Wildfire Aviation"
 format: 
   docx:
     reference-doc: custom-reference-doc.docx
@@ -9,6 +9,15 @@ bibliography: references.bib
 csl: journal-of-agricultural-and-resource-economics.csl
 ---
 
+## Abstract
+
+We examine two economic aspects of aviation used for wildland firefighting in the United States. First, we analyze the procurement of aviation resources by federal agencies, and how the structure of contracts influences suppression costs. Second, we highlight the lack of empirical evidence on the effectiveness of aviation, and provide a research design to quantify effectiveness and the benefits of aviation use. Our analysis can inform tactical operations on individual wildfire incidents and help federal agencies develop season-long resource utilization strategies.
+[^ack]
+
+[^ack]: Acknowledgements: We acknowledge support from the United States Forest Service (agreement #21-CS-11221636-151). We are thankful for the research assistance from Kyra Adamson.
+
+{{< pagebreak >}}
+
 ## Introduction
 
 <!-- aviation expense -->
@@ -17,11 +26,7 @@ Over the past 10 years, the federal government has spent an average of \$2.3 bil
 
 The procurement of aviation resources influences federal expenditure on firefighting aviation. For nearly the past two decades, federal firefighting agencies have contracted with private companies that own and maintain firefighting aircraft. Currently, federal agencies either lease aircraft for much of the season or sign short-term contracts for a higher daily cost. The structure and prices of these contracts and the procurement mechanism influence how aviation resources are used and the costs borne by firefighting agencies.
 
-<!-- objectives  -->
-
 The objective of this paper is to describe and analyze two economic aspects of aviation used for wildfire response. First, we apply economic principles to the procurement of aviation resources and discuss how and where economic efficiency can be gained. Second, we discuss how the benefits of aviation are not well measured or tracked, making it difficult to analyze the benefits relative to the costs. While this paper will not come to clear conclusions about the use of aviation, it will frame the economic problems and attempt to provide a path forward for how to solve them.
-
-<!-- aviation is an important response asset but expensive -->
 
 Wildfire response is a coordinated effort between federal, state, and local land management agencies. Firefighting resources include hand crews, engines, dozers and aircraft. These resources are owned by different agencies but will coordinate under unified command when incidents become large and complex. When multiple fires are burning, resources are allocated according to need and agency official's expectation of benefit on specific fires [@bayham2020].
 
@@ -39,7 +44,7 @@ Expected use patterns are a function of fire activity throughout the season. If 
 
 [^2]: The only publicly accessible document we could locate was from June 24, 2022 https://www.fs.usda.gov/Internet/FSE_DOCUMENTS/fseprd1041508.pdf
 
-![Trends of Extended Attack (top) and Initial Attack (middle) fires from 2007 to 2021. The points represent the median and the lines represent the interquartile range (25th to 75th percentile). The bottom panel represents the number of LATs and VLATs available by day under exclusive use contract in 2022. The initial and extended attack fire counts are compiled from historical daily situation reports posted at https://www.nifc.gov/nicc-files/sitreprt.pdf and collected using code from [@nguyen2023], and the number of LATs and VLATs contracted are from the June 24, 2022 Schedule of Items posted at https://www.fs.usda.gov/Internet/FSE_DOCUMENTS/fseprd1041508.pdf](../figures/ia_ea_fires.png){#fig-aviation_use}
+
 
 While a procurement strategy aligned with historical usage patterns may be more cost effective in expectation, there are political consequences of having too few aircraft under contract when more are available. In the wake of a destructive wildfire, the public often asks what more firefighting agencies could have done. If aviation resources could have stopped a fire from spreading or protected homes, public and political pressure provide incentive to contract more resources than necessary - a result of risk aversion.
 
@@ -65,13 +70,13 @@ Here we define a study design intended to objectively and quantitatively measure
 
 @fig-example_drop illustrates the empirical strategy on a retardant drop on the Terek fire that burned in Wyoming in 2018. The fire is progressing south and retardant is dropped in advance of the fire. The drop is 529 meters long. The north side of the drop (A) is the pre-treatment region while the south side (B) is the post-treatment region. The control region is east of the retardant line with the north and south similarly defined as the pre (C) and post period (D)A. In this example, the fire does not progress south of the drop into region B, but it does progress into region D (post-period control area), providing some evidence that the drop prevented the spread of the fire to the south.
 
-![Retardant drop on the Terek Fire in Wyoming 2018. The fire (red area) is progressing south. The treated group is magenta region, and the control group is in yellow. Regions A and C form the pre area and B and D form the post.](../figures/example_drop.png){#fig-example_drop}
+
 
 We cannot draw conclusions from a single drop. We repeat this procedure across many drops on many fires. Once the regions are defined for each drop, we can use geographic information systems (GIS) to extract information on vegetation, topography, and weather conditions at the time the fire encountered the drop. The following model can be used to estimate the average treatment effect of the drop,
 
 $$ y_{it} = \alpha + \beta_1 Treated_i + \beta_2 Post_t + \beta_3 (Treated_i \cdot Post_t) + \gamma X_{it} + \varepsilon_{it} , $$ where $y_{it}$ is the outcome variable for unit $i$ at time $t$. The outcome could be a binary indicator for whether an area burned or a measure of intensity like Fire Radiance Power.[^5] $Treated_i$ is a binary variable indicating whether unit $i$ is in the treatment group (region A and B in @fig-example_drop). $Post_t$ is a binary variable indicating whether the observation is from the post-treatment period (region B and D in @fig-example_drop). $X_{it}$ is a vector of vegetation measures, topography, and weather, and $\varepsilon_{it}$ is the error term. The coefficient of interest is $\beta_3$, which represents the treatment effect. It measures the difference in the change in fire outcomes between the treatment and control groups before and after the treatment.
 
-[^5]: Fire Radiance Power is a quantitative measure of energy detected by satellites observing fire activity. These data are generated and shared by *NASA's Fire Information for Resource Management System (FIRMS) (https://earthdata.nasa.gov/firms), part of NASA's Earth Observing System Data and Information System (EOSDIS).*
+[^5]: Fire Radiance Power is a quantitative measure of energy detected by satellites observing fire activity. These data are generated and shared by *NASA's Fire Information for Resource Management System (FIRMS) (https://earthdata.nasa.gov/firms), part of NASA's Earth Observing System Data and Information System (EOSDIS).*
 
 The identification of the treatement effect is based on the assumption that the precise location of the start and end of the drop is as good as random. The pilots intend to drop retardant in the area, but the exact location is subject to pilot accuracy, speed, altitude, and weather conditions. If the end points of the retardant drop are quasirandom, then the untreated region near the drop is just as likely to be treated.
 
@@ -89,21 +94,7 @@ The current structure of procuring aviation resources involves exclusive use and
 
 Economically efficient procurement requires an understanding of aviation effectiveness. The Aviation Firefighting Use and Effectiveness Report is an attempt to quantify effectiveness. However, its study design fails to objectively measure effectiveness. We propose a research design to quantify the effect of aviation drops on fire growth and intensity. The results of our proposed analysis can be used to quantify the benefits of aviation use and can inform firefighting strategy as well as operational needs for different resource types.
 
-### Maybe material
 
--   more flexible CWN contracts: Current records suggest that CWN contracts are executed for 90 days. The federal firefighting agencies could benefit from shorter and more flexible contracts. If there were no transactions cost[^6], the ideal arrangement would allow the firefighting agency to use (and pay for) the aircraft only when they need it.
-
-[^6]: By transactions cost, we mean the time and effort to arrange, verify, and execute the contract, the moving of aircraft, and any other logistical issues involved in using the aircraft.
-
-For example, the default CWN contract could be one week with a requirement that the federal agency renew or release the aircraft before
-
--   sunk cost fallacy: The structure of the procurement model may influence how aviation resources are used. The daily availability price can range from \$30k to \$50k per day while the hourly flight cost ranges from \$xxk to \$xxk. Those involved in allocating aviation resources may view unused aircraft as wasteful since the daily availability rate is paid regardless of use.
-
--   The schedule of items suggests that there are relatively few private entities that own aircraft. Procurement auctions tend to be more economically efficient when there are more bidders competing for the limited contract. Auction theory suggests that the competition between the bidders over a limited number of contracts will incentivize them to reveal their true willingness to accept, which should equal their marginal cost of provision. Moreover, the auction efficiency assumes that each bidder's cost of provision is unknown to the other bidders. When the number of bidders is small and there is ample opportunity for the bidders to communicate in advance of submitting bids, it is more likely that the bidders will bid above their marginal cost of provision. Moreover, the aircraft owners repeatedly participate in this annual procurement process allowing them to learn about their competitors and the government's willingness to pay. In principle, these forces may lead to higher procurement costs. However, these auction inefficiencies may be unavoidable since the ownership and maintenance of large aircraft is capital intensive, which serves as a barrier to new entrants in the market.[^7]
-
-[^7]: The McDonnell Douglas DC 10, one of the largest active airtankers, is currently listed for sale for \$2.75 million (https://myemail.constantcontact.com/McDonnell-Douglas-DC-10-30-Freighter-For-Sale--Price-Reduction-.html?soid=1102673403687&aid=zTC4sV-oTNI, accessed September 9, 2023).
-
-Moreover, the federal agencies are not the only customers of companies that own firefighting aircraft. Indeed, these companies increasingly sell their services to other countries (e.g., Canada and Australia) as well as US state agencies. For example, the Colorado Division of Fire Prevention and Control has signed exclusive use contracts for a BA-146 airtanker provided by Neptune Aviation [@gabbert2021].
 
 {{< pagebreak >}}
 
@@ -111,3 +102,13 @@ Moreover, the federal agencies are not the only customers of companies that own 
 
 ::: {#refs}
 :::
+
+{{< pagebreak >}}
+
+## Figures
+
+![Trends of Extended Attack (top) and Initial Attack (middle) fires from 2007 to 2021. The points represent the median and the lines represent the interquartile range (25th to 75th percentile). The bottom panel represents the number of LATs and VLATs available by day under exclusive use contract in 2022. The initial and extended attack fire counts are compiled from historical daily situation reports posted at https://www.nifc.gov/nicc-files/sitreprt.pdf and collected using code from [@nguyen2023], and the number of LATs and VLATs contracted are from the June 24, 2022 Schedule of Items posted at https://www.fs.usda.gov/Internet/FSE_DOCUMENTS/fseprd1041508.pdf](../figures/ia_ea_fires.png){#fig-aviation_use}
+
+{{< pagebreak >}}
+
+![Retardant drop on the Terek Fire in Wyoming 2018. The fire (red area) is progressing south. The treated group is magenta region, and the control group is in yellow. Regions A and C form the pre area and B and D form the post.](../figures/example_drop.png){#fig-example_drop}
